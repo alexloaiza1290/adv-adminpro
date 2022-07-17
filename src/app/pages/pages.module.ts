@@ -29,6 +29,7 @@ import { ComponentsModule } from '../components/components.module';
     RouterModule,
     FormsModule,
     ComponentsModule
+
   ]
 })
 export class PagesModule { }
