@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
+import { AccountsSettingsComponent } from './accounts-settings/accounts-settings.component';
 
 
 @NgModule({
@@ -15,13 +16,15 @@ import { ComponentsModule } from '../components/components.module';
     PagesComponent,
     ProgressComponent,
     Grafica1Component,
-    DashboardComponent    
+    DashboardComponent,
+    AccountsSettingsComponent
   ],
   exports:[
     PagesComponent,
     ProgressComponent,
     Grafica1Component,
-    DashboardComponent
+    DashboardComponent,
+    AccountsSettingsComponent
   ],
   imports: [
     CommonModule,
