@@ -13,13 +13,13 @@ const routes: Routes = [
     path: 'dashboard',
     component: PagesComponent,
     children: [
-      { path: '', component: DashboardComponent },
-      { path: 'grafica1', component: Grafica1Component },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'account-settings', component: AccountsSettingsComponent },
-      { path: 'promesas', component: PromesasComponent },
-      { path: 'rxjs', component: RxjsComponent },
-        ]
+      { path: '', component: DashboardComponent, data: { titulo: 'DashBoard' } },
+      { path: 'grafica1', component: Grafica1Component, data: { titulo: 'Gráficas' }  },
+      { path: 'progress', component: ProgressComponent, data: { titulo: 'Progress Bar' }  },
+      { path: 'account-settings', component: AccountsSettingsComponent, data: { titulo: 'Account Settings' }  },
+      { path: 'promesas', component: PromesasComponent, data: { titulo: 'Promesas' }  },
+      { path: 'rxjs', component: RxjsComponent, data: { titulo: 'RxJs' }  },
+    ]
   },
 ];
 
@@ -27,4 +27,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PagesRoutingModule {}
+export class PagesRoutingModule { }
